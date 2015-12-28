@@ -254,7 +254,7 @@ public class EncryptionParameters implements Cloneable {
         dos.writeUTF(hashAlg);
         dos.close();
     }
-
+    
 
     @Override
     public int hashCode() {

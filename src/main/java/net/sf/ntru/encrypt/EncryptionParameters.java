@@ -252,9 +252,10 @@ public class EncryptionParameters implements Cloneable {
         dos.writeBoolean(fastFp);
         dos.write(polyType.ordinal());
         dos.writeUTF(hashAlg);
+        dos.close();
     }
 
-    
+
     @Override
     public int hashCode() {
         final int prime = 31;
